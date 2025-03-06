@@ -1,0 +1,12 @@
+.link {
+  font-weight: bold;
+  transition: all .4s ease;
+}
+
+.link:hover {
+  color: orange;
+}
+
+.active {
+  color: orange !important;
+}
