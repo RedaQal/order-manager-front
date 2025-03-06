@@ -3,6 +3,7 @@ import DetailsOrder from './components/DetailsOrder'
 import "./App.css"
 import ListOrders from "./components/ListOrders"
 import { Navigate, Route, Routes } from "react-router-dom"
+import AddOrder from "./components/AddOrder"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' index element={<Navigate to={"/list-orders"} />} />
         <Route path='/list-orders' element={<ListOrders />} />
         <Route path='/details-order/:id' element={<DetailsOrder />} />
+        <Route path='/new-order' element={<AddOrder />} />
       </Routes>
     </>
   )
