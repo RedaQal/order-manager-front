@@ -4,6 +4,7 @@ import "./App.css"
 import ListOrders from "./components/ListOrders"
 import { Navigate, Route, Routes } from "react-router-dom"
 import AddOrder from "./components/AddOrder"
+import AddProduct from "./components/AddProduct"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/list-orders' element={<ListOrders />} />
         <Route path='/details-order/:id' element={<DetailsOrder />} />
         <Route path='/new-order' element={<AddOrder />} />
+        <Route path='/new-product' element={<AddProduct />} />
       </Routes>
     </>
   )
