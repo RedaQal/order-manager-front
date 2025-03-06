@@ -131,6 +131,7 @@ export default function AddOrder() {
 
     return (
         <div className="container mt-5 w-75 m-auto">
+            <div className="card p-4 shadow-sm">
             <h2 className="mb-4 text-center">Add New Order</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
@@ -179,7 +180,7 @@ export default function AddOrder() {
                     Add Product
                 </button>
 
-                <div className="mb-3 w-75 m-auto">
+                <div className="mb-3 w-75 text-center m-auto">
                     <h4>Selected Products</h4>
                     {formData.items.map((product, index) => (
                         <div key={index} className="d-flex justify-content-between align-items-center mb-2">
@@ -251,6 +252,7 @@ export default function AddOrder() {
                     {isSubmitting ? 'Submitting...' : 'Add Order'}
                 </button>
             </form>
+        </div>
         </div>
     );
 }
